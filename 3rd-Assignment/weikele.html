@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/CSS" href="styles.css">
+        <meta charset="UTF-8">
+        <title>Assignment 3</title>
+    </head>
+
+    <nav>
+        <!--Drop Down Menus-->
+        <div class="dropdown">
+            <div class="dropdown-button">Hiking</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <div class="dropdown-button">Hiking</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <div class="dropdown-button">Hiking</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <div class="dropdown-button">Hiking</div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        
+        
+		
+    </nav>
+
+    <header>
+        
+    </header>
+
+    <body>
+        <div id="main">
+            <h1 id="headertext">Nature</h1>
+            
+            <img src="image.jpg" id="bodyimage">
+            
+            <p id="bodytext">
+                    Nature, in the broadest sense, is the natural, physical, or material world or universe.
+                    "Nature" can refer to the phenomena of the physical world, and also to life in general. 
+                    The study of nature is a large, if not the only, part of science. Although humans are part of nature, 
+                    human activity is often understood as a separate category from other natural phenomena.
+                    The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", 
+                    and in ancient times, literally meant "birth".[1] Natura is a Latin translation of the Greek word physis 
+                    (φύσις), which originally related to the intrinsic characteristics that plants, animals, and other features
+                    of the world develop of their own accord.[2][3] The concept of nature as a whole, the physical universe, 
+                    is one of several expansions of the original notion; it began with certain core applications of the word 
+                    φύσις by pre-Socratic philosophers, and has steadily gained currency ever since. This usage continued during 
+                    the advent of modern scientific method in the last several centuries.[4][5]
+                    Within the various uses of the word today, "nature" often refers to geology and wildlife.
+                    Nature can refer to the general realm of living plants and animals, and in some cases to the processes 
+                    associated with inanimate objects—the way that particular types of things exist and change of their own accord, 
+                    such as the weather and geology of the Earth. It is often taken to mean the "natural environment" 
+                    or wilderness—wild animals, rocks, forest, and in general those things that have not been substantially
+                    altered by human intervention, or which persist despite human intervention. For example, 
+                    manufactured objects and human interaction generally are not considered part of nature, 
+                    unless qualified as, for example, "human nature" or "the whole of nature". This more traditional 
+                    concept of natural things which can still be found today implies a distinction between the natural and 
+                    the artificial, with the artificial being understood as that which has been brought into being by a human 
+                    consciousness or a human mind. Depending on the particular context, the term "natural" might also 
+                    be distinguished from the unnatural or the supernatural. 
+            </p>
+            
+            <div class="slideshow">
+                <img class="slideshow-image" src="slideshow-images/bend1.jpg">
+                <img class="slideshow-image" src="slideshow-images/bend2.jpg">
+                <img class="slideshow-image" src="slideshow-images/bend3.jpg">
+            </div>
+
+        </div>
+        
+        
+
+    </body>
+
+    <footer>
+        Created by Ethan Weikel and Wyatt Pierce for Assignment 3
+    </footer>
+
+<script>
+    var index = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var slides = document.getElementsByClassName("slideshow-image");
+        
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        index++;
+        
+        if (index > slides.length) {index = 1}    
+
+        slides[index-1].style.display = "block";  
+        
+        // Change image every 3 seconds
+        setTimeout(carousel, 3000); 
+    }
+</script>
+<script src="javascript.js"></script>
+
+</html>
