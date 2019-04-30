@@ -89,14 +89,16 @@ p{
     position: relative;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 0;
     top: -5.5em;
+    min-height: 700px;
     display: block;
     padding: 1%; 
     border: outset;
     border-color: lightblue;
     border-width: 0 0.2em 0.2em 0.2em;
     box-shadow: 2em 2em 1em -1em grey;  
-    min-height: 100%;
+    
 }
 
 #headertext{
@@ -109,7 +111,7 @@ p{
     text-align: center;
 }
 
-#bodytext{
+.bodytext{
     margin: 1.5em;
     display: inline;
     font-size: 1.6em;
@@ -127,10 +129,58 @@ p{
     margin-left: auto;
     margin-right: auto;
     display: none;
+
+    border-style: solid;
+    border-color: lightblue;
+    border-radius: 10%;
+	box-shadow: 2em 2em 1em grey;
 }
 
 textarea {
     margin-left: 10%;
 	width: 75%;
     height: 15em;
+}
+
+/*Image Tiles*/
+#image-tiles{
+    margin: 4em 15em 2em 15em;
+    border-style: solid;
+    min-height: 750px;
+    text-align: center;
+}
+
+.reset-clear{
+    background-color: white;
+}
+
+.tile-border{
+    display: inline-block;
+    border-style: solid;
+    margin: 2em;
+    background-image: linear-gradient(red, yellow);
+}
+
+.tile{
+    height: 200px;
+    width: 200px;
+    margin: 2em;
+    display: inline-block;
+}
+
+.close-tile{
+    padding: 4px;
+    margin: 2px;
+    position: relative;
+    top: -246px;
+    right: -269px;
+    text-decoration: none;
+    border-style: none;
+    font-size: 16px;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.close-tile:hover{
+    opacity: 0.8;
 }
