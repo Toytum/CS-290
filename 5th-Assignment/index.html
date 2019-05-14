@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Banky Bois</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+      <div id="main-header">
+          <h1>Bank Transfer</h1>
+      </div>
+      <div id="main">
+
+        <div class="tab" id="exchange-tab" onclick="selectTab(this)">
+          <h2>Exchange</h2>   
+        </div>
+        <div class="tab" id="add-tab" onclick="selectTab(this)">
+          <h2>Add</h2>
+        </div>
+        <div class="tab" id="update-tab" onclick="selectTab(this)">
+          <h2>Update</h2>
+        </div>
+        <br>
+        <div class="main-body" id="exchange">
+          
+          <form name="exchange-form" method="post" onsubmit="return verifyExchangeForm()">
+            Source: </br>
+            <select name="source">
+              <option value="U.S.A">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Mexico">Mexico</option>
+            </select></br>
+          
+            To: </br>
+            <select name="to">
+              <option value="U.S.A">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Mexico">Mexico</option>
+            </select></br>
+
+            Amount: </br>
+            <input type="text" name="amount" id="exchange-form-amount"></br>
+            
+            <input id="clear" type="reset" value="CLEAR">
+            <input id="submit" type="submit" value="SUBMIT">
+          </form>
+
+        </div>
+
+        <div class="main-body" id="add">
+
+          <form name="add-country-form" method="post" onsubmit="return verifyAddCountryForm()">
+            Country: </br>
+            <input type="text" name="country" id="add-country-form-country-name"></br>
+            Currency: </br>
+            <input type="text" name="currency" id="add-country-form-currency"></br>
+            Notation: </br>
+            <input type="text" name="notation" id="add-country-form-notation"></br>
+            Rate at 1 USD: </br>
+            <input type="text" name="rate" id="add-country-form-rate"></br>
+            Commission: </br>
+            <input type="text" name="comission" id="add-country-form-commission"></br>
+
+            <input id="clear" type="reset" value="CLEAR">
+            <input id="submit" type="submit" value="SUBMIT">
+          </form></br>
+
+        </div>
+
+        <div class="main-body" id="update">
+          
+          <form name="update-form" method="post" onsubmit="return verifyUpdateCountryForm()">
+              Country: </br>
+              <select name="countrySource">
+                <option value="autofill">AUTOFILL?</option>
+              </select></br>
+              Currency: </br>
+              <input type="text" name="currency" value="autofill" id="update-form-currency"></br>
+              Notation: </br>
+              <input type="text" name="notation" value="autofill" id="update-form-notation"></br>
+              Rate at 1 USD: </br>
+              <input type="text" name="rate" value="autofill" id="update-form-rate"></br>
+              Comission: </br>
+              <input type="text" name="comission" value="autofill" id="update-form-commission"></br>
+
+              <input id="clear" type="reset" value="CLEAR">
+              <input id="submit" type="submit" value="SUBMIT">
+          </form>
+        </div>
+        
+      </div>
+  </body>
+  <footer>
+      Created by Wyatt Pierce and Ethan Weikel
+  </footer>
+
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+  <script src="frontend.js"></script>
+</html>
