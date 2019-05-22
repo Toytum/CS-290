@@ -8,6 +8,8 @@
     text-align: center;
 }
 .box{
+    background-image: url("anime.jpg");
+    background-position: 50%;
     position: relative;
     width: 100px;
     height: 100px;
@@ -19,6 +21,8 @@
     padding: 25%;
 }
 .red{
+    background-image: url("anime.jpg");
+    background-position: 50%;
     background-color: red;
 }
 .blue{
