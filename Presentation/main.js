@@ -57,13 +57,16 @@ var prop = anime({
     autoplay: false
 });
 
+
+
 document.querySelector('#btns .play').onclick = playPause.play;
 document.querySelector('#btns .pause').onclick = playPause.pause;
 document.querySelector('#btns .reset').onclick = playPause.restart;
+document.querySelector('#btns .reverse').onclick = playPause.reverse;
 
 document.querySelector('#btns .playAll').onclick = playAll.play;
+document.querySelector('#btns .reverseAll').onclick = playAll.reverse;
 
-// document.querySelector('#boxes .box').onclick = playOne.play;\
 
 document.querySelector('#tranP').onclick = tran.play;
 document.querySelector('#tranR').onclick = tran.restart;
