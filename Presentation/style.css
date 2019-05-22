@@ -1,0 +1,79 @@
+#btns{
+    margin: 2em;
+    padding: 1em;
+    background-color: lightgray;
+    margin-bottom: 1em;
+}
+#boxes{
+    text-align: center;
+}
+.box{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+.box p{
+    text-align: center;
+    padding: 25%;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: cyan;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+#tranBtns{
+    margin: 2em;
+    padding: 1em;
+    background-color: lightgray;
+    margin-bottom: 1em;
+}
+#transition{
+    margin: auto;
+    width: 22em;
+    background-color: gray;
+}
+.boc{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+.boc p{
+    text-align: center;
+    padding: 25%;
+}
+#propBtns{
+    margin: 2em;
+    padding: 1em;
+    background-color: lightgray;
+    margin-bottom: 1em;
+}
+#property{
+    margin: auto;
+    width: 22em;
+    background-color: gray;
+}
+.prop{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}
+.prop p{
+    text-align: center;
+    padding: 25%;
+}
+#ani{
+    margin-bottom: 15em;
+}
