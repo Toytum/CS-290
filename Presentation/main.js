@@ -48,7 +48,7 @@ var prop = anime({
       easing: 'easeInOutSine'
     },
     scale: {
-      value: 2,
+      value: 10,
       duration: 1600,
       delay: 800,
       easing: 'easeInOutQuart'
